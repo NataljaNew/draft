@@ -1,0 +1,67 @@
+:root {
+    --first-color: rgb(108, 155, 224);
+    --second-color:#e3f2fd;
+  }
+.logo {
+    width: 48px;
+    height: auto;
+}
+.bg_header{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/* .header{
+    position: fixed;
+    z-index: 3;
+} */
+.main_bg_color{
+    background-color: var(--first-color);
+}
+.phone{
+    text-decoration: none;
+}
+.nav-link{
+    border-radius: 15px;
+}
+@media (max-width: 767px) {
+	.nav-link {
+		float: none;
+        text-align: center;
+        letter-spacing: 3px;
+	}
+} 
+.nav-link:hover, .btn-primary:hover {
+    background-color:var(--first-color);
+}
+main{
+    min-height: 100%;
+}
+html, body {
+    height: 100%;
+}
+footer {
+    min-height: 200px;
+}
+.sales{
+    text-transform: uppercase;
+}
+.text-ellipsis{
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.min-h-80{
+    min-height: 80px;
+}
+.card-img-top{
+    height: 100px;
+    width: 70px;
+}
+body{
+    background-image: url(../img/Web-Background.jpg);
+    background-attachment: fixed;
+}
+.wrapper{
+    background-color: pink;
+}

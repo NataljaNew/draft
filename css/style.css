@@ -2,6 +2,66 @@
     --first-color: rgb(108, 155, 224);
     --second-color:#e3f2fd;
   }
+
+body, .form {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
+.input_men:hover, .input_jewelery:hover, .input_women:hover, .input_electronics:hover, .input_products:hover {
+    background-color: #0dcaf0;
+} 
+.register:hover{
+    background-color: green;
+    width: 150px;
+    cursor: pointer;
+}
+.cart:hover{
+    color:red;
+    cursor: pointer;
+}
+.input-group-text:hover{
+    cursor: pointer;
+    background-color:gray;
+}
+.popup_modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.form_input{
+    width: 30rem;
+}
+.popup_content{
+  /* display: none; */
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40rem;
+  background-color: #ffffff;
+}
+
+.popup_close {
+  position: absolute;
+  top: -2.2rem;
+  right: -5rem;
+  font-size: 4rem;
+  color: #ffffff;
+  border: none;
+  background: transparent;
+}
+
+.fw_700 {
+    font-weight: 700;
+}
+
 .logo {
     width: 48px;
     height: auto;
@@ -9,10 +69,10 @@
 .bg_header{
     background-color: rgba(0, 0, 0, 0.6);
 }
-/* .header{
-    position: fixed;
+.header{
+    position: sticky;
     z-index: 3;
-} */
+}
 .main_bg_color{
     background-color: var(--first-color);
 }
@@ -22,12 +82,16 @@
 .nav-link{
     border-radius: 15px;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
 	.nav-link {
 		float: none;
         text-align: center;
         letter-spacing: 3px;
 	}
+    .register{
+        float: right;
+        width: 30%;
+    }
 } 
 .nav-link:hover, .btn-primary:hover {
     background-color:var(--first-color);
@@ -64,4 +128,7 @@ body{
 }
 .wrapper{
     background-color: pink;
+}
+.navbar{
+    padding: 0 ! important
 }
